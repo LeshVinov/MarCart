@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Sen:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/marcart-logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/main.js"></script>
     <title>MarCart</title>
@@ -24,7 +25,7 @@
                     <!-- /.header-top-links__item -->
                     <div class="header-top-info__item">
                         <img src="./img/map-mark.svg" alt="Картинка информации" class="header-info-item__img">
-                        <p class="header-info-item__text">г.Люберцы, ул. Попова, д.6, ст.1</p>
+                        <p class="header-info-item__text">г.Люберцы, ул. Мира, д.7</p>
                     </div>
                     <!-- /.header-top-links__item -->
                     <div class="header-top-info__item">
@@ -49,11 +50,15 @@
                     <p class="header-bottom__logo-text">MarCart</p>
                     <a href="#about" class="header-bottom-nav__item">О нас</a>
                     <a href="#cars" class="header-bottom-nav__item">Машины</a>
-                    <a href="#" class="header-bottom-nav__item">Услуги</a>
-                    <a href="#" class="header-bottom-nav__item">Контакты</a>
+                    <a href="#service" class="header-bottom-nav__item">Услуги</a>
+                    <a href="#contact" class="header-bottom-nav__item">Контакты</a>
                 </div>
                 <!-- /.header-bottom-nav -->
-                <button class="button button--secondary header__button">Войти</button>
+                <div class="header-auth">
+                    <button class="button button--secondary header__button">Вход</button>
+                    <button class="button button--secondary header__button header__button--regist">Регистрация</button>
+                </div>
+                <!-- /.header-auth -->
             </div>
             <!-- /.header-bottom -->
         </div>
@@ -143,7 +148,7 @@
                     </div>
                     <!-- /.cars-models -->
                     <div class="cars-info-desc">
-                        <p class="cars-info__name">Granta Sedan</p>
+                        <h2 class="cars-info__name">Granta Sedan</h2>
                         <span class="cars-info__price">от 678 300 ₽</span>
                         <button class="button button--primary cars__button">О модели</button>
                     </div>
@@ -154,6 +159,123 @@
             <!-- /.container -->
         </section>
         <!-- /.cars -->
+        <section class="service" id="service">
+            <div class="container">
+                <h2 class="service__title title">Ваш автомобиль может стать лучше!</h2>
+                <p class="service__desc">Мы представляем следующий спектр услуг:</p>
+                <div class="service-list">
+                    <div class="service-list__item">
+                        <img src="./img/service-img--black.svg" alt="Картинка услуги" class="service-item__img">
+                        <span class="service-item__title">Записаться на сервис</span>
+                    </div>
+                    <!-- /.service-list__item -->
+                    <div class="service-list__item">
+                        <img src="./img/accesoires-img--black.svg" alt="Картинка услуги" class="service-item__img">
+                        <span class="service-item__title">Аксессуары для машины</span>
+                    </div>
+                    <!-- /.service-list__item -->                    <div class="service-list__item">
+                        <img src="./img/contact-img--black.svg" alt="Картинка услуги" class="service-item__img">
+                        <span class="service-item__title">Быстрая обратная связь</span>
+                    </div>
+                    <!-- /.service-list__item -->                    <div class="service-list__item">
+                        <img src="./img/drive-img--black.svg" alt="Картинка услуги" class="service-item__img">
+                        <span class="service-item__title">Тест-драйв <br> перед покупкой</span>
+                    </div>
+                    <!-- /.service-list__item -->
+                </div>
+                <!-- /.service-list -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.service -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2 class="contact__title title">Контакты</h2>
+                <div class="contact-content">
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5508.62387646886!2d37.90315083132192!3d55.66887979789987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab634dcb378f7%3A0x336ebf2dc3ce950d!2z0YPQuy4g0JzQuNGA0LAsINCb0Y7QsdC10YDRhtGLLCDQnNC-0YHQutC-0LLRgdC60LDRjyDQvtCx0LsuLCAxNDAwMTQ!5e0!3m2!1sru!2sru!4v1677663279359!5m2!1sru!2sru" width="725" height="515" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <!-- /.map -->
+                    <div class="contact-desc">
+                        <div class="header-top-info__item">
+                            <img src="./img/phone.svg" alt="Картинка информации" class="header-info-item__img">
+                            <p class="header-info-item__text">+7 926 883 99 12</p>
+                        </div>
+                        <!-- /.header-top-links__item -->
+                        <div class="header-top-info__item">
+                            <img src="./img/map-mark.svg" alt="Картинка информации" class="header-info-item__img">
+                            <p class="header-info-item__text">г.Люберцы, ул. Мира, д.7</p>
+                        </div>
+                        <!-- /.header-top-links__item -->
+                        <div class="header-top-info__item">
+                            <img src="./img/support.svg" alt="Картинка информации" class="header-info-item__img">
+                            <p class="header-info-item__text">support@mail.com</p>
+                        </div>
+                        <!-- /.header-top-links__item -->
+                        <form action="#" class="contact-form">
+                            <input type="name" id="form_name" class="input contact-form__input" placeholder="Имя">
+                            <textarea type="text" id="form_name" class="input contact-form__input input-textarea" placeholder="Сообщение"></textarea>
+                            <input type="submit" class="button button--primary contact-form__button">
+                        </form>
+                        <!-- /.contact-form -->
+                    </div>
+                    <!-- /.contact-desc -->
+                </div>
+                <!-- /.contact-content -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.contact -->
     </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="header-top">
+                <div class="header-top-info">
+                    <div class="header-top-info__item">
+                        <img src="./img/phone.svg" alt="Картинка информации" class="header-info-item__img">
+                        <p class="header-info-item__text">+7 926 883 99 12</p>
+                    </div>
+                    <!-- /.header-top-links__item -->
+                    <div class="header-top-info__item">
+                        <img src="./img/map-mark.svg" alt="Картинка информации" class="header-info-item__img">
+                        <p class="header-info-item__text">г.Люберцы, ул. Попова, д.6, ст.1</p>
+                    </div>
+                    <!-- /.header-top-links__item -->
+                    <div class="header-top-info__item">
+                        <img src="./img/support.svg" alt="Картинка информации" class="header-info-item__img">
+                        <p class="header-info-item__text">support@mail.com</p>
+                    </div>
+                    <!-- /.header-top-links__item -->
+                </div>
+                <!-- /.header-top-info -->
+                <div class="header-top-social">
+                    <a href="#" class="header-top-social__item"><img src="./img/inst.svg" alt="Картинка социальной сети" class="header-top-social__img"></a>
+                    <a href="#" class="header-top-social__item"><img src="./img/vk-white.svg" alt="Картинка социальной сети" class="header-top-social__img"></a>
+                    <a href="#" class="header-top-social__item"><img src="./img/tg.svg" alt="Картинка социальной сети" class="header-top-social__img"></a>
+                    <a href="#" class="header-top-social__item"><img src="./img/yt.svg" alt="Картинка социальной сети" class="header-top-social__img"></a>
+                </div>
+                <!-- /.header-top-social -->
+            </div>
+            <!-- /.header-top -->
+            <div class="footer-nav">
+                <p class="header-bottom__logo-text">MarCart</p>
+                <div class="footer-nav-list">
+                    <a href="#about" class="header-bottom-nav__item">О нас</a>
+                    <a href="#cars" class="header-bottom-nav__item">Машины</a>
+                    <a href="#service" class="header-bottom-nav__item">Услуги</a>
+                    <a href="#contact" class="header-bottom-nav__item">Контакты</a>
+                </div>
+                <!-- /.footer-nav-list -->
+            </div>
+            <!-- /.footer-nav -->
+            <div class="footer-copyright">
+                <a href="#" class="footer-copyright__text">Copyright © 2023</a>
+                <strong class="copyright__rools">Все права защищены</strong>
+            </div>
+            <!-- /.footer-copyright -->
+        </div>
+        <!-- /.container -->
+    </footer>
+    <!-- /.footer -->
 </body>
 </html>
