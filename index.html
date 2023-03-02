@@ -10,13 +10,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Sen:wght@400;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./img/marcart-logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
-    <script src="./js/main.js"></script>
+    <script src="./js/main.js" defer></script>
     <title>MarCart</title>
 </head>
 <body>
     <header class="header">
         <div class="container">
             <div class="header-top">
+                <a href="./index.html" class="header-top__logo"><img src="./img/logo-marcart-white11.png" alt="Лого" class="header-top__img"></a>
                 <div class="header-top-info">
                     <div class="header-top-info__item">
                         <img src="./img/phone.svg" alt="Картинка информации" class="header-info-item__img">
@@ -45,7 +46,10 @@
             </div>
             <!-- /.header-top -->
             <div class="header-bottom">
-                <a href="./index.html" class="header-bottom__logo"><img src="./img/logo-marcart-white11.png" alt="Лого" class="header-bottom__img"></a>
+                <div class="header-logo">
+                    <a href="./index.html" class="header-bottom__logo"><img src="./img/logo-marcart-white11.png" alt="Лого" class="header-bottom__img"></a>
+                </div>
+                <!-- /.header-logo -->
                 <div class="header-bottom-content">
                     <div class="header-bottom-nav">
                         <p class="header-bottom__logo-text">MarCart</p>
@@ -59,7 +63,7 @@
                     </div>
                     <!-- /.header-bottom-nav -->
                     <div class="header-auth">
-                        <button class="button button--secondary header__button">Вход</button>
+                        <button class="button button--secondary header__button header__button--auth">Вход</button>
                         <button class="button button--secondary header__button header__button--regist">Регистрация</button>
                     </div>
                     <!-- /.header-auth -->
@@ -73,6 +77,22 @@
     <!-- /.header -->
     <main>
         <section class="hero" id="hero-section">
+            <div class="header-top--burger">
+                <a href="./index.html" class="header-top__logo--burger"><img src="./img/logo-marcart-white11.png" alt="Лого" class="header-top__img header-top__img--burger"></a>
+                <div class="header-top-social--burger">
+                    <a href="#" class="header-top-social__item"><img src="./img/inst.svg" alt="Картинка социальной сети" class="header-top-social__img"></a>
+                    <a href="#" class="header-top-social__item"><img src="./img/vk-white.svg" alt="Картинка социальной сети" class="header-top-social__img"></a>
+                    <a href="#" class="header-top-social__item"><img src="./img/tg.svg" alt="Картинка социальной сети" class="header-top-social__img"></a>
+                    <a href="#" class="header-top-social__item"><img src="./img/yt.svg" alt="Картинка социальной сети" class="header-top-social__img"></a>
+                </div>
+                <!-- /.header-top-social -->
+                <div class="menu-btn">
+                    <div class="menu-btn__burger"></div>
+                    <!-- /.menu-btn__burger -->
+                </div>
+                <!-- /.menu-btn -->
+            </div>
+            <!-- /.header-top--burger -->
             <div class="container hero-content">
                 <h1 class="hero__title">MarCart</h1>
                 <p class="hero__desc">Официальный дилер автомобилей LADA </p>
@@ -110,8 +130,8 @@
                             </div>
                             <!-- /.about-row-card -->
                             <div class="about-row-card">
-                                <h3 class="about-card__title">Отзывы</h3>
-                                <p class="about-card__desc">Большое количество положительных отзывов. Оставьте и вы!</p>
+                                <h3 class="about-card__title">ТехСервис</h3>
+                                <p class="about-card__desc">Возможность обращения в техсервис при возникновении поломок</p>
                             </div>
                             <!-- /.about-row-card -->
                         </div>
@@ -203,21 +223,24 @@
                     </div>
                     <!-- /.map -->
                     <div class="contact-desc">
-                        <div class="header-top-info__item">
-                            <img src="./img/phone.svg" alt="Картинка информации" class="header-info-item__img">
-                            <p class="header-info-item__text">+7 926 883 99 12</p>
+                        <div class="contact-top">
+                            <div class="header-top-info__item">
+                                <img src="./img/phone.svg" alt="Картинка информации" class="header-info-item__img">
+                                <p class="header-info-item__text">+7 926 883 99 12</p>
+                            </div>
+                            <!-- /.header-top-links__item -->
+                            <div class="header-top-info__item">
+                                <img src="./img/map-mark.svg" alt="Картинка информации" class="header-info-item__img">
+                                <p class="header-info-item__text">г.Люберцы, ул. Мира, д.7</p>
+                            </div>
+                            <!-- /.header-top-links__item -->
+                            <div class="header-top-info__item">
+                                <img src="./img/support.svg" alt="Картинка информации" class="header-info-item__img">
+                                <p class="header-info-item__text">support@mail.com</p>
+                            </div>
+                            <!-- /.header-top-links__item -->
                         </div>
-                        <!-- /.header-top-links__item -->
-                        <div class="header-top-info__item">
-                            <img src="./img/map-mark.svg" alt="Картинка информации" class="header-info-item__img">
-                            <p class="header-info-item__text">г.Люберцы, ул. Мира, д.7</p>
-                        </div>
-                        <!-- /.header-top-links__item -->
-                        <div class="header-top-info__item">
-                            <img src="./img/support.svg" alt="Картинка информации" class="header-info-item__img">
-                            <p class="header-info-item__text">support@mail.com</p>
-                        </div>
-                        <!-- /.header-top-links__item -->
+                        <!-- /.contact-top -->
                         <form action="#" class="contact-form">
                             <input type="name" id="form_name" class="input contact-form__input" placeholder="Имя">
                             <textarea type="text" id="form_name" class="input contact-form__input input-textarea" placeholder="Сообщение"></textarea>
