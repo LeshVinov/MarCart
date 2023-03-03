@@ -93,19 +93,32 @@
                 <!-- /.menu-btn -->
             </div>
             <!-- /.header-top--burger -->
-            <div class="container hero-content">
-                <h1 class="hero__title">MarCart</h1>
-                <p class="hero__desc">Официальный дилер автомобилей LADA </p>
-                <div class="hero-slider-dots">
-                    <div class="hero-slider-dots__item active"></div>
-                    <div class="hero-slider-dots__item"></div>
-                    <div class="hero-slider-dots__item"></div>
+            <div class="container hero-content hero-slider">
+                <div class="hero-slider__item hero-slider__item--active">
+                    <h1 class="hero__title">MarCart</h1>
+                    <p class="hero__desc">Официальный дилер автомобилей LADA </p>
                 </div>
-                <!-- /.hero-slider-dots -->
+                <!-- /.hero-slider__item -->
+                <div class="hero-slider__item">
+                    <h1 class="hero__title">MarCart</h1>
+                    <p class="hero__desc">Самые низкие цены </p>
+                </div>
+                <!-- /.hero-slider__item -->
+                <div class="hero-slider__item">
+                    <h1 class="hero__title">MarCart</h1>
+                    <p class="hero__desc">Большой выбор автомобилей</p>
+                </div>
+                <!-- /.hero-slider__item -->
             </div>
             <!-- /.container -->
-            <button class="button hero-slider__button"></button>
-            <button class="button hero-slider__button"></button>
+            <div class="hero-slider-dots">
+                <div class="hero-slider-dots__item hero-slider-dots__item--active"></div>
+                <div class="hero-slider-dots__item"></div>
+                <div class="hero-slider-dots__item"></div>
+            </div>
+            <!-- /.hero-slider-dots -->
+            <button class="button hero-slider__button slider-button-prev" id="arrow-left"></button>
+            <button class="button hero-slider__button slider-button-next" id="arrow-right"></button>
         </section>
         <!-- /.hero -->
         <section class="about" id="about">
