@@ -1,4 +1,4 @@
-// burger-menu ------------------------------------------------------------------------
+// burger-menu -------------------------------------------------------------------------
 
 const menuBtn = document.querySelector('.menu-btn')
 const menuNav = document.querySelector('.header')
@@ -15,6 +15,8 @@ menuBtn.addEventListener('click', () => {
         menuOpen = false;
     }
 });
+
+// end burger-menu----------------------------------------------------------------------
 
 // slider ------------------------------------------------------------------------------
 
@@ -48,7 +50,7 @@ const sliderFunc = () => {
         if(countSlider >= slides.length) {
             countSlider = 0
         }
-        sliderBlock.style.background = `url('../img/hero-bg-`+`${countSlider}`+`.jpg') no-repeat center / cover`
+        sliderBlock.style.background = `url('./img/hero-bg-`+`${countSlider}`+`.jpg') no-repeat center / cover`
 
         nextSlide(slides, countSlider, 'hero-slider__item--active')
         nextSlide(dots, countSlider, 'hero-slider-dots__item--active')
@@ -90,7 +92,7 @@ const sliderFunc = () => {
         if(countSlider < 0) {
             countSlider = slides.length-1
         }
-        sliderBlock.style.background = `url('../img/hero-bg-`+`${countSlider}`+`.jpg') no-repeat center / cover`
+        sliderBlock.style.background = `url('./img/hero-bg-`+`${countSlider}`+`.jpg') no-repeat center / cover`
     
         nextSlide(slides, countSlider, 'hero-slider__item--active')
         nextSlide(dots, countSlider, 'hero-slider-dots__item--active')
@@ -116,3 +118,5 @@ if (document.body.clientWidth>768){
 } 
 
 // endSlider -------------------------------------------------------------------------
+
+// sending form ----------------------------------------------------------------------
