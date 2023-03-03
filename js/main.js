@@ -23,10 +23,6 @@ menuBtn.addEventListener('click', () => {
 const sliderFunc = () => {
     const sliderBlock = document.querySelector('.hero')
     const slides = document.querySelectorAll('.hero-slider__item')
-    
-    const sliderButtonPrev = document.querySelector('.slider-button-prev')
-    const sliderButtonNext = document.querySelector('.slider-button-next')
-    
     const dots = document.querySelectorAll('.hero-slider-dots__item')
     
     const timeInterval = 3000
@@ -46,11 +42,11 @@ const sliderFunc = () => {
         prevSlide(slides, countSlider, 'hero-slider__item--active')
         prevSlide(dots, countSlider, 'hero-slider-dots__item--active')
         countSlider++
-        sliderBlock.style.background = `url('./img/hero-bg-`+`${countSlider}`+`.jpg') no-repeat center / cover`
+        sliderBlock.style.background = `url('/img/hero-bg-`+`${countSlider}`+`.jpg') no-repeat center / cover`
         if(countSlider >= slides.length) {
             countSlider = 0
         }
-        sliderBlock.style.background = `url('./img/hero-bg-`+`${countSlider}`+`.jpg') no-repeat center / cover`
+        sliderBlock.style.background = `url('/img/hero-bg-`+`${countSlider}`+`.jpg') no-repeat center / cover`
 
         nextSlide(slides, countSlider, 'hero-slider__item--active')
         nextSlide(dots, countSlider, 'hero-slider-dots__item--active')
@@ -92,7 +88,7 @@ const sliderFunc = () => {
         if(countSlider < 0) {
             countSlider = slides.length-1
         }
-        sliderBlock.style.background = `url('./img/hero-bg-`+`${countSlider}`+`.jpg') no-repeat center / cover`
+        sliderBlock.style.background = `url('/img/hero-bg-`+`${countSlider}`+`.jpg') no-repeat center / cover`
     
         nextSlide(slides, countSlider, 'hero-slider__item--active')
         nextSlide(dots, countSlider, 'hero-slider-dots__item--active')
