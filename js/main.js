@@ -46,11 +46,11 @@ const sliderFunc = () => {
         prevSlide(slides, countSlider, 'hero-slider__item--active')
         prevSlide(dots, countSlider, 'hero-slider-dots__item--active')
         countSlider++
-        sliderBlock.style.background = `url('../img/hero-bg-`+`${countSlider}`+`.jpg') no-repeat center / cover`
+        sliderBlock.style.background = `url('img/hero-bg-`+`${countSlider}`+`.jpg') no-repeat center / cover`
         if(countSlider >= slides.length) {
             countSlider = 0
         }
-        sliderBlock.style.background = `url('./img/hero-bg-`+`${countSlider}`+`.jpg') no-repeat center / cover`
+        sliderBlock.style.background = `url('img/hero-bg-`+`${countSlider}`+`.jpg') no-repeat center / cover`
 
         nextSlide(slides, countSlider, 'hero-slider__item--active')
         nextSlide(dots, countSlider, 'hero-slider-dots__item--active')
