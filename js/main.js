@@ -172,8 +172,6 @@ const submitForm = () =>{
         formBody[key] = val
     })
 
-    // console.log('Хули ты отправил?')
-
     if (validate(formElements)) {
         sendData(formBody)
         .then(data => {
