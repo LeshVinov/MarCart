@@ -206,19 +206,25 @@
                     <div class="service-list__item">
                         <img src="./img/service-img--black.svg" alt="Картинка услуги" class="service-item__img">
                         <span class="service-item__title">Записаться на сервис</span>
+                        <p class="service-item__text">Своевременное прохождение технического обслуживания у официального дилера LADA — это Ваша уверенность в безопасности и надежности Вашего автомобиля LADA</p>
                     </div>
                     <!-- /.service-list__item -->
                     <div class="service-list__item">
                         <img src="./img/accesoires-img--black.svg" alt="Картинка услуги" class="service-item__img">
                         <span class="service-item__title">Аксессуары для машины</span>
+                        <p class="service-item__text">Оригинальные аксессуары подчеркивают к индивидуальность и предоставляют свободу качественного выбора.</p>
                     </div>
-                    <!-- /.service-list__item -->                    <div class="service-list__item">
+                    <!-- /.service-list__item -->                    
+                    <div class="service-list__item">
                         <img src="./img/contact-img--black.svg" alt="Картинка услуги" class="service-item__img">
                         <span class="service-item__title">Быстрая обратная связь</span>
+                        <p class="service-item__text">Клиентская служба поможет ответить на вопросы. А также поможет решить даже самую проблемную ситуацию</p>
                     </div>
-                    <!-- /.service-list__item -->                    <div class="service-list__item">
+                    <!-- /.service-list__item -->                    
+                    <div class="service-list__item">
                         <img src="./img/drive-img--black.svg" alt="Картинка услуги" class="service-item__img">
                         <span class="service-item__title">Тест-драйв <br> перед покупкой</span>
+                        <p class="service-item__text">Пройдите тест-драйв понравившейся модели, выбрав удобное для Вас время</p>
                     </div>
                     <!-- /.service-list__item -->
                 </div>
@@ -254,10 +260,14 @@
                             <!-- /.header-top-links__item -->
                         </div>
                         <!-- /.contact-top -->
-                        <form action="#" class="contact-form">
-                            <input type="name" id="form_name" class="input contact-form__input" placeholder="Имя">
-                            <textarea type="text" id="form_name" class="input contact-form__input input-textarea" placeholder="Сообщение"></textarea>
-                            <input type="submit" class="button button--primary contact-form__button">
+                        <form action="#" class="contact-form" id="contact_form">
+                            <div class="contact-form-group">
+                                <input type="name" id="form_name" name="contact-form_Name" class="input contact-form__input" placeholder="Имя" required>
+                                <input type="tel" id="form_phone" name="contact-form_Phone" class="input contact-form__input" placeholder="Телефон" required>
+                            </div>
+                            <!-- /.contact-form-group -->
+                            <textarea type="text" id="form_name" name="contact-form_Message" class="input contact-form__input input-textarea" placeholder="Сообщение"></textarea>
+                            <input type="submit" class="button button--primary contact-form__button" required>
                         </form>
                         <!-- /.contact-form -->
                     </div>
