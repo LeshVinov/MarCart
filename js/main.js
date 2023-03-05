@@ -192,6 +192,9 @@ const submitForm = () =>{
             
         })
     } else {
+        formElements.forEach(input => {
+            input.value = ''
+        })
         statusBlock.textContent = validateErrorText
         setTimeout(() => {
             statusBlock.remove()
