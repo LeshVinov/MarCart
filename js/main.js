@@ -20,11 +20,12 @@ menuBtn.addEventListener('click', () => {
 
 // slider ------------------------------------------------------------------------------
 
+const sliderBlock = document.querySelector('.hero')
+const slides = document.querySelectorAll('.hero-slider__item')
+const dots = document.querySelectorAll('.hero-slider-dots__item')
+
 const sliderFunc = () => {
-    const sliderBlock = document.querySelector('.hero')
-    const slides = document.querySelectorAll('.hero-slider__item')
-    const dots = document.querySelectorAll('.hero-slider-dots__item')
-    
+   
     const timeInterval = 3000
     
     let countSlider = 0
@@ -109,9 +110,18 @@ const sliderFunc = () => {
     startSlide(timeInterval)
 }
 
-if (document.body.clientWidth>768){
-    sliderFunc()
-} 
+try {
+    if (!sliderBlock) {
+        throw new Error('Верните слайдер')
+        
+    }
+    if (document.body.clientWidth>768){
+        sliderFunc()
+    } 
+} catch(error) {
+    console.log(error.message);
+}
+
 
 // end Slider ------------------------------------------------------------------------
 
